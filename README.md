@@ -3,8 +3,17 @@
 This repo contains the supported code and configuration files to reproduce object detection results of [ConvNext](https://arxiv.org/pdf/2201.03545.pdf). It is based on [facebookresearch/ConvNeXt/object_detection](https://github.com/facebookresearch/ConvNeXt/tree/main/object_detection).
 
 ## Updates
+***24/05/2022*** Add train results
 
 ***20/05/2022*** Initial commits
+
+## Results and Fine-tuned Models
+
+| name | Pretrained Model | Method | Lr Schd | box mAP | mask mAP | #params | FLOPs | Fine-tuned Model |
+|:---:|:---:|:---:|:---:| :---:|:---:|:---:|:---:| :---:|
+| ConvNeXt-T | [ImageNet-1K](https://dl.fbaipublicfiles.com/convnext/convnext_tiny_1k_224.pth) | Mask R-CNN | 3x | 46.2 | 41.6 | 48M | 262G | [model](https://dl.fbaipublicfiles.com/convnext/coco/mask_rcnn_convnext_tiny_1k_3x.pth) |
+
+
 
 ## Usage
 
